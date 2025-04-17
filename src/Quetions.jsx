@@ -46,7 +46,7 @@ export const Quetions = () => {
     };
 
     return (
-        <div className='h-[calc(100vh-9rem)] flex justify-center items-center'>
+        <div className='h-[calc(100vh-9rem)] flex justify-center items-center bg-slate-200'>
             <div className='flex flex-col justify-between items-center h-[25rem]'>
 
                 <div className='bg-slate-400/12 h-[5rem] w-[45rem] rounded-[0.2rem] mt-5 shadow-lg shadow-gray-800
@@ -73,11 +73,11 @@ export const Quetions = () => {
 
                             return (
                                 <div key={index}>
-                                    <div className={`flex justify-between items-center mb-3 text-amber-50 
-                                        rounded-[0.2rem] w-[30rem] ${bgColor}`}>
+                                    <div className={`cursor-pointer flex justify-between items-center mb-3 text-amber-50 
+                                        rounded-[0.2rem] w-[30rem] h-[2.5rem] transform all duration-500 hover:scale-105 ${bgColor}`}>
                                         <div className='text-[1.2rem] pl-10'>{option}</div>
                                         <button
-                                            className='bg-orange-400 px-4 py-1 rounded-sm cursor-pointer'
+                                            className='bg-slate-950 px-4 py-1 rounded-sm cursor-pointer'
                                             onClick={() => mactAns(option)}
                                             disabled={!!answers[que]}
                                         >
