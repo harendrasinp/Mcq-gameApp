@@ -58,8 +58,9 @@ export const Quetions = () => {
 
                 <div>
                     {end ? (
-                        <div className='text-[1.5rem] flex flex-col justify-center items-center'>
-                            <div>{`Total Right Questions: ${rightQ}/${total}`}</div>
+                        <div className='text-[1.5rem] text-amber-100 flex flex-col justify-center items-center bg-slate-950
+                                        h-[11rem] w-[11rem] rounded-[50%]'>
+                            <div>{`Questions: ${rightQ}/${total}`}</div>
                             <div>{`Total Marks: ${marks}`}</div>
                         </div>
                     ) : (
